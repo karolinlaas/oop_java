@@ -13,7 +13,7 @@ public class Punkt {
         this.setVeerand();
     }
 
-    //  setter:
+//  setter:
     public void setVeerand() {
         if(this.x > 0 & this.y > 0) this.veerand = 1;
         else if(this.x > 0 & this.y < 0) this.veerand = 2;
@@ -22,8 +22,16 @@ public class Punkt {
         else this.veerand = 0;
     }
 
+//  getterid:
+    public Double getX() {
+        return x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+
     public void valjastaKirjeldus() {
         System.out.println("Punkt " + this.nimetus + " koordinaatidega (" + this.x + "; " + this.y + ") asub " + this.veerand + ". veerandis.");
     }
-
 }
