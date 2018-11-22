@@ -24,7 +24,11 @@ public class Kujund {
         this.nurkadeArv = nurkadeArv;
     }
 
-//  getterid
+    public void setPindala(Double pindala) {
+        this.pindala = pindala;
+    }
+
+    //  getterid
 
 
     public String getNimetus() {
@@ -37,6 +41,10 @@ public class Kujund {
 
     public Integer getNurkadeArv() {
         return nurkadeArv;
+    }
+
+    public Double getPindala() {
+        return pindala;
     }
 
     //  tüübi tegevused - klassi meetodid
