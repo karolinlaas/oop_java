@@ -24,6 +24,21 @@ public class Kujund {
         this.nurkadeArv = nurkadeArv;
     }
 
+//  getterid
+
+
+    public String getNimetus() {
+        return nimetus;
+    }
+
+    public Boolean getNurkadeOlemasolu() {
+        return nurkadeOlemasolu;
+    }
+
+    public Integer getNurkadeArv() {
+        return nurkadeArv;
+    }
+
     //  tüübi tegevused - klassi meetodid
     public void arvutaPindala() {
         System.out.println("Kujund klassi arvutaPindala() meetod");
