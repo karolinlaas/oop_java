@@ -5,6 +5,14 @@ public class Kujundid {
         Kujund kolmnurk = new Kujund("Kolmnurk");
 
         ring.valjastaKirjeldus();
+
+/*      Need read ei tööta, kuna nimetus on privaatne omadus
+        ring.nimetus = "Ruut";
+         ring.valjastaKirjeldus(); */
+
+        ring.setNimetus("Ruut");
+        ring.valjastaKirjeldus();
+
         ruut.valjastaKirjeldus();
         kolmnurk.valjastaKirjeldus();
     }

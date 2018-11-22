@@ -1,16 +1,20 @@
 public class Kujund {
 //  tüübi omadused - klassi muutujad
-    public String nimetus;
-    public Double pindala;
-    public Boolean nurkadeOlemasolu;
-    public Integer nurkadeArv;
+    private String nimetus;
+    private Double pindala;
+    private Boolean nurkadeOlemasolu;
+    private Integer nurkadeArv;
 
 //  konstruktor
     public Kujund(String nimi) {
         this.nimetus = nimi;
     }
 
-//  tüübi tegevused - klassi meetodid
+    public void setNimetus(String nimi) {
+        this.nimetus = nimi;
+    }
+
+    //  tüübi tegevused - klassi meetodid
     public void arvutaPindala() {
         System.out.println("Kujund klassi arvutaPindala() meetod");
     }
