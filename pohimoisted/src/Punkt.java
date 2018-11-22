@@ -6,10 +6,11 @@ public class Punkt {
     private Integer veerand;
 
 //  constructor
-    public void Punkt(String nimetus, Double x, Double y) {
+    public Punkt(String nimetus, Double x, Double y) {
         this.nimetus = nimetus;
         this.x = x;
         this.y = y;
+        this.setVeerand();
     }
 
     //  setter:
@@ -18,11 +19,11 @@ public class Punkt {
         else if(this.x > 0 & this.y < 0) this.veerand = 2;
         else if(this.x < 0 & this.y < 0) this.veerand = 3;
         else if(this.x < 0 & this.y > 0) this.veerand = 4;
-        else this.veerand = 0
+        else this.veerand = 0;
     }
 
     public void valjastaKirjeldus() {
-        System.out.println("Punkt " + this.nimetus + " koordinaatidega (" + this.x + ";" + this.y + ") asub " + this.veerand + ". veerandis.");
+        System.out.println("Punkt " + this.nimetus + " koordinaatidega (" + this.x + "; " + this.y + ") asub " + this.veerand + ". veerandis.");
     }
 
 }
