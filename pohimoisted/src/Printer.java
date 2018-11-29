@@ -11,7 +11,6 @@ public class Printer {
         } else {
             this.tooneriTase = 0;
         }
-        this.tooneriTase = tooneriTase;
         this.kahepoolne = kahepoolne;
         this.paberiArv = 0;
     }
@@ -38,8 +37,22 @@ public class Printer {
             paberiKulu = lehtedeArv / 2 + lehtedeArv % 2;
             System.out.println("kahepoolne printimine");
         }
-        this.paberiArv = this.paberiArv - paberiKulu;
-        return paberiKulu;
+        if (paberiKulu > this.paberiArv) {
+            System.out.println("Printeris ei ole piisavalt paberit");
+            System.out.println("Lisa " + (paberiKulu - this.paberiArv) + " paberit juurde");
+            return 0;
+        } else {
+            this.paberiArv = this.paberiArv - paberiKulu;
+            return paberiKulu;
+        }
+    }
+
+    public Integer lisaPaber(Integer lehtedeArv) {
+        if (lehtedeArv > 0 & lehtedeArv < 500) {
+            this.paberiArv = this.paberiArv + lehtedeArv;
+            System.out.println("Printerisse on lisatud " + lehtedeArv + " paberit.");
+        }
+        return this.paberiArv;
     }
 
     public Integer getPaberiArv() {
