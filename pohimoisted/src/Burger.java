@@ -27,23 +27,41 @@ public class Burger {
         this.lisand4Hind = 0.4;
     }
 
-    public void valiLisand1(String lisand1, Double lisand1Hind) {
-        System.out.println("Burgerile on lisatud " + this.lisand1);
+    public void valiLisand1() {
+        System.out.println("Burgerile on lisatud " + this.lisand1 + ", mis maksab " + this.lisand1Hind + " eurot.");
     }
 
-    public void valiLisand2(String lisand2, Double lisand2Hind) {
-        System.out.println("Burgerile on lisatud " + this.lisand2);
+    public void valiLisand2() {
+        System.out.println("Burgerile on lisatud " + this.lisand2 + ", mis maksab " + this.lisand2Hind + " eurot.");
     }
 
-    public void valiLisand3(String lisand3, Double lisand3Hind) {
-        System.out.println("Burgerile on lisatud " + this.lisand3);
+    public void valiLisand3() {
+        System.out.println("Burgerile on lisatud " + this.lisand3 + ", mis maksab " + this.lisand3Hind + " eurot.");
     }
 
-    public void valiLisand4(String lisand4, Double lisand4Hind) {
-        System.out.println("Burgerile on lisatud " + this.lisand4);
+    public void valiLisand4() {
+        System.out.println("Burgerile on lisatud " + this.lisand4 + ", mis maksab " + this.lisand4Hind + " eurot.");
     }
 
     public void koostaBurger() {
+        System.out.println("Valitud on " + getNimetus() + ", mille lihaks on " + getLiha() + " ning millel on " + getSai() + ".");
+        System.out.println("Lisanditena on valitud " + lisand1 + ", " + lisand2 + ", " + lisand3 + " ja " + lisand4 + ".");
 
+    }
+
+    public String getNimetus() {
+        return nimetus;
+    }
+
+    public String getLiha() {
+        return liha;
+    }
+
+    public String getSai() {
+        return sai;
+    }
+
+    public Double getHind() {
+        return hind;
     }
 }
