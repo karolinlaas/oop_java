@@ -17,36 +17,36 @@ public class Burger {
         this.liha = liha;
         this.sai = sai;
         this.hind = hind;
-        this.lisand1 = "muna";
-        this.lisand2 = "tomat";
-        this.lisand3 = "salat";
-        this.lisand4 = "kurk";
-        this.lisand1Hind = 1.0;
-        this.lisand2Hind = 0.6;
-        this.lisand3Hind = 0.5;
-        this.lisand4Hind = 0.4;
     }
 
-    public void valiLisand1() {
+    public void valiLisand1(String lisand1, Double lisand1Hind) {
+        this.lisand1 = lisand1;
+        this.lisand1Hind = lisand1Hind;
         System.out.println("Burgerile on lisatud " + this.lisand1 + ", mis maksab " + this.lisand1Hind + " eurot.");
     }
 
-    public void valiLisand2() {
+    public void valiLisand2(String lisand2, Double lisand2Hind) {
+        this.lisand2 = lisand2;
+        this.lisand2Hind = lisand2Hind;
         System.out.println("Burgerile on lisatud " + this.lisand2 + ", mis maksab " + this.lisand2Hind + " eurot.");
     }
 
-    public void valiLisand3() {
+    public void valiLisand3(String lisand3, Double lisand3Hind) {
+        this.lisand3 = lisand3;
+        this.lisand3Hind = lisand3Hind;
         System.out.println("Burgerile on lisatud " + this.lisand3 + ", mis maksab " + this.lisand3Hind + " eurot.");
     }
 
-    public void valiLisand4() {
+    public void valiLisand4(String lisand4, Double lisand4Hind) {
+        this.lisand4 = lisand4;
+        this.lisand4Hind = lisand4Hind;
         System.out.println("Burgerile on lisatud " + this.lisand4 + ", mis maksab " + this.lisand4Hind + " eurot.");
     }
 
     public void koostaBurger() {
         System.out.println("Valitud on " + getNimetus() + ", mille lihaks on " + getLiha() + " ning millel on " + getSai() + ".");
-        System.out.println("Lisanditena on valitud " + lisand1 + ", " + lisand2 + ", " + lisand3 + " ja " + lisand4 + ".");
 
+        System.out.println("Burgeri hind kokku on " + (hind + lisand1Hind + lisand2Hind + lisand3Hind + lisand4Hind) + " eurot.");
     }
 
     public String getNimetus() {
